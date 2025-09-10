@@ -13,5 +13,3 @@ class TestData:
     test_user_1 = ['Надежда', 'Яблоновская', 'Москва', 'Сокольники', '89202292541', '25.09.2025']
     test_user_2 = ['Практик', 'Практиканец', 'Центр Земли', 'Красные Ворота', '89999999999', '17.10.2025']
 
-    scooter_url = 'https://qa-scooter.praktikum-services.ru/'
-    dzen_url = 'https://dzen.ru/'

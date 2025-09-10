@@ -14,10 +14,13 @@ class BasePage:
         self.driver.execute_script('arguments[0].scrollIntoView():, element')
 
     
-    @allure.step('Подождать загрузки эелемента')
+    @allure.step('Подождать загрузки элемента')
     def wait_visibility_of_element(self, locator):
         return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator))
     
+    @allure.step('Ожидание, когда элемент станет кликабельным')
+    def wait_clickable_of_element(self, locator):
+        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(locator))
 
     @allure.step('Клик по элементу')
     def click_on_element(self, locator):

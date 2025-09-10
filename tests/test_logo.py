@@ -14,7 +14,7 @@ class TestLogo:
         assert main_page.check_displaying_of_main_header()
 
 
-    @allure.title('Проверка перехода на сайь "Дзен" при клике на лого "Яндекс"')
+    @allure.title('Проверка перехода на сайт "Дзен" при клике на лого "Яндекс"')
     def test_logo_yandex(self, driver):
         main_page = MainPage(driver)
         main_page.wait_visibility_of_header_logo_yandex()
